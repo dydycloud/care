@@ -1,0 +1,29 @@
+{# src/Care/SiteBundle/Resources/views/Blog/index.html.twig #}
+ 
+{% extends "CareSiteBundle::layout.html.twig" %}
+ 
+{% block title %}
+  Accueil - {{ parent() }}
+{% endblock %}
+
+{% block caresite_body %}
+	<div class="container-narrow">
+
+		<div class="masthead">
+			<ul class="nav nav-pills pull-right">
+				<li class="active"><a href="#">Acceuil</a></li>
+				<li><a href="#">Trouvez les!</a></li>
+				<li><a href="#">Care</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<h2 style="font-size: 82px; color:#E74C3C;" id="logo"><img src="{{ asset('images/bilan-de-sante-diabete.png') }}" width="80" height="80" alt="">Care</h2>
+		</div>
+
+		<div class="jumbotron">
+			<h1>Les Généralistes, Spécialistes près de chez vous.</h1>
+			<iframe width="540" height="380" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.fr/maps?safe=off&amp;q=medecin&amp;ie=UTF8&amp;hq=medecin&amp;hnear=Chilly-Mazarin,+Essonne,+%C3%8Ele-de-France&amp;t=m&amp;fll=48.811385,2.399826&amp;fspn=0.317433,0.727158&amp;st=115968771510351694523&amp;rq=1&amp;ev=p&amp;split=1&amp;ll=48.817716,2.38678&amp;spn=0.434042,0.878906&amp;z=10&amp;output=embed"></iframe>
+			<p class="lead" style="color:#E74C3C;">Simple, Rapide et précis.</p>
+			<a class="btn btn-large btn-success" href="#">Trouvez les!</a>
+		</div>
+    </div> <!-- /container -->
+{% endblock %}

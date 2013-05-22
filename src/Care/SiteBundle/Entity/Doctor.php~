@@ -1,0 +1,55 @@
+<?php
+ 
+namespace Care\SiteBundle\Entity;
+ 
+use Doctrine\ORM\Mapping as ORM;
+ 
+use Care\SiteBundle\Entity\GMap;
+ 
+/**
+ * Person
+ *
+ * @author Sandy PIERRE
+ * @ORM\Entity
+ * @ORM\Table(name="doctor")
+ */
+class Doctor extends GMap
+{
+    /**
+   * @var integer $id
+   *
+   * @ORM\Column(name="id", type="integer")
+   * @ORM\Id
+   * @ORM\GeneratedValue(strategy="AUTO")
+   */
+	private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="first_name", type="string", length=255, nullable=false)
+     */
+    protected $firstName;
+ 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="last_name", type="string", length=255, nullable=false)
+     */
+    protected $lastName;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="telephone", type="string", length=255, nullable=false)
+     */
+    protected $telephone;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="email", type="string", length=255, nullable=false)
+     */
+    protected $email;
+}
+?>

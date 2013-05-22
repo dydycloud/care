@@ -1,0 +1,11 @@
+careSite_hello:
+    pattern:  /hello/{name}
+    defaults: { _controller: CareSiteBundle:Default:index }
+
+careSite_home:
+    pattern:   /home
+    defaults:  { _controller: CareSiteBundle:Site:index }
+
+careSite_mail:
+    pattern:   /mail
+    defaults:  { _controller: CareSiteBundle:Site:mail }

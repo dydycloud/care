@@ -1,0 +1,10 @@
+parameters:
+    care_site.antispam.class: Care\SiteBundle\Antispam\MonkeyAntispam
+
+services:
+    care_site.antispam:
+        class: %care_site.antispam.class%
+        #ici %locale% permet de récupérer la langue, 
+        #3 c le nombre de liens ou mail declenchant l'alerte spam
+        arguments: [@mailer, %locale%, 3]
+#        arguments: [@service_id, "plain_value", %parameter%]

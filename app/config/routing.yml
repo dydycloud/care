@@ -1,0 +1,4 @@
+care_site:
+    resource: "@CareSiteBundle/Resources/config/routing.yml"
+    prefix:   /site
+

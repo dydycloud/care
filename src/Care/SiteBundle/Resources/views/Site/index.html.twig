@@ -1,0 +1,62 @@
+{# src/Care/SiteBundle/Resources/views/Blog/index.html.twig #}
+ 
+{% extends "CareSiteBundle::layout.html.twig" %}
+ 
+{% block title %}
+  Accueil - {{ parent() }}
+{% endblock %}
+
+{% block caresite_body %}
+	<div class="container-narrow">
+
+		<div class="masthead">
+			<ul class="nav nav-pills pull-right">
+				<li class="active"><a href="#">Acceuil</a></li>
+				<li><a href="#">recherche</a></li>
+				<li><a href="#">Care</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<h2 style="font-size: 82px; color:#E74C3C;" id="logo"><img src="{{ asset('images/bilan-de-sante-diabete.png') }}" width="80" height="80" alt="">Care</h2>
+		</div>
+
+		<hr>
+
+		<div class="jumbotron">
+			<h1>Les Généralistes, Spécialistes près de chez vous.</h1>
+			<p class="lead">Trouver facilement le medecin le plus proche de votre localisation, simple rapide et précis.</p>
+			<a class="btn btn-large btn-success" href="#">Trouvez les!</a>
+		</div>
+
+		<hr>
+
+		<div class="row-fluid marketing">
+			<div class="span6">
+				<h4>Subheading</h4>
+				<p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+				<h4>Subheading</h4>
+				<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+				<h4>Subheading</h4>
+				<p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+			</div>
+
+			<div class="span6">
+				<h4>Subheading</h4>
+				<p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+				<h4>Subheading</h4>
+				<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+				<h4>Subheading</h4>
+				<p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+			</div>
+		</div>
+
+		<hr>
+
+		<div class="footer">
+			<p>&copy; Bemonkey 2013</p>
+		</div>
+    </div> <!-- /container -->
+{% endblock %}
